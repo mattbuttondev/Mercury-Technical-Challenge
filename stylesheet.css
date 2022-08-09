@@ -1,0 +1,87 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+form {
+    width: fit-content;
+    height: auto;
+    background-color: rgb(137, 200, 46);
+    border: 5px solid rgb(60, 60, 59);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+label {
+    display: inline-block;
+    width: 50px;
+}
+
+input {
+    border: 3px solid;
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+button {
+    margin: 5px 0px 0px 0px;
+    background-color: rgb(231, 0, 100);
+    border-radius: 5px;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(215, 0, 100);
+}
+
+.success input {
+    border-color: rgb(62, 91, 21);
+}
+
+.error input {
+    border-color: rgb(231, 0, 100);
+}
+
+.input-container p {
+    color: rgb(231, 0, 100);
+}
+
+@media all and (min-width:0px) and (max-width: 660px) {
+
+    label {
+        display: inline-block;
+    }
+
+    input {
+        border: 3px solid;
+        width: 200px;
+        padding: 15px;
+        margin: 5px 0px;
+    }
+
+    button {
+        margin: 15px 0px 0px 0px;
+        background-color: rgb(231, 0, 100);
+        border-radius: 5px;
+        padding: 12.5px 85px;
+        cursor: pointer;
+    }
+}
