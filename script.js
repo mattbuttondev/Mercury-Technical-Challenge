@@ -36,7 +36,7 @@ nameInput.onkeydown = function (e) {
 }
 
 let nameValidation = function () {
-    if (nameInput.value.length > 0) {
+    if (nameInput.value.trim().length > 0) {
         if (nameInput.value.match(/^[A-Za-z\s\.]*$/)) {
             showSuccess("name-container")
             return true;
