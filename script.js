@@ -136,7 +136,7 @@ function formValidation() {
         emailInput.setAttribute('disabled', '')
         cardInput.setAttribute('disabled', '')
         submit.setAttribute('disabled', '')
-        alert('An email containing these details has been sent to hello@dn-uk.com')
+        alert('An email containing these details has been sent to test@dn-uk.com')
     } else {
         if (nameValidation() == false) {
             if (nameInput.value.length > 0) {
